@@ -3,8 +3,6 @@ var params = [['New York','19ecf7015ca75659ab181524b24868ba','m'],
 
 const tableBody = document.getElementById("table-body");
 
-const buttonSumbit = document.getElementById("button-sumbit");
-
 let aux = 0;
 let inputCity = "";
 
