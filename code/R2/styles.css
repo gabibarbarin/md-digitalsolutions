@@ -1,0 +1,145 @@
+/* Vista de moviles y tablets */
+
+* {
+    box-sizing: border-box;
+    font-family: 'KoHo', Times, serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container{
+    max-width: 1440px;
+    margin: 5% .2% 0 .5%;
+}
+
+.table-flip {
+    display: flex;
+    background: transparent;
+    overflow-x: scroll;
+    border-collapse: collapse;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: solid 2px #005fbf;
+}
+
+.table-flip thead {
+    display: flex;
+    flex-shrink: 0;
+    min-width: min-content;
+    color: white;
+}
+
+.table-flip thead th {
+    background: linear-gradient(180deg,#005fbf,#003f7f);
+    padding: 11px 10px 11px 25px;
+    font-size: 15px;
+}
+
+.table-flip tbody {
+    display: flex;
+}
+
+.table-flip tbody td {
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+}
+
+.table-flip tbody td:nth-child(2n + 1) {
+    background-color: rgb(196, 239, 245);
+}
+
+.table-flip tbody td:last-child {
+    border-bottom: solid 1px white;
+}
+  
+.table-flip tr {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.table-flip td{
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.table-flip th i{
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.table-flip th i:hover{
+    cursor: pointer;
+}
+
+.table-flip thead span{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* Vista de escritorio */
+
+@media screen and (min-width: 992px) {
+    .table-flip{
+        display: inline-block;
+        overflow-x: auto;
+        margin-right: .2%;
+        border-collapse: collapse;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .table-flip thead {
+        display: table-header-group;
+        padding: 10px 20px;
+    }
+
+    .table-flip tbody {
+        display: table-row-group;
+        overflow: hidden;
+    }
+
+    .table-flip tbody tr{
+        border-bottom: solid 1px black;
+    }
+
+    .table-flip tbody tr:last-child{
+        border-bottom: none;
+    }
+
+    .table-flip tbody td {
+        border: 0 0 0 0;
+        border-right: solid 1px black;
+        padding: 5px 0;
+        min-width: max-content;
+        max-width: 1%;
+    }    
+    .table-flip tbody td:last-child {
+        border-right: none;
+        border-bottom: solid 1px black;
+    }
+
+    .table-flip tr{
+        display: table-row;
+    }
+
+    .table-flip td, .table-flip th{
+        display: table-cell;
+    }
+
+    .table-flip th{
+        border-right: solid 1px black;
+    }
+
+    .table-flip th:last-child{
+        border-right: none;
+    }
+
+    .table-flip thead th {
+        padding: 1.1rem 0.3rem 1.1rem 0.3rem;
+    }
+}
