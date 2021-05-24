@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link FontAwsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+    <!--Link hoja de estilos-->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!--Links Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300&display=swap" rel="stylesheet">
+
+    <title>Solicitud R4</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="container-inputs">
+            <input type="text" id="input-city" placeholder="Ingrese una ciudad">
+            <button id="button-sumbit" onclick="newRow(inputCity,params,aux)">Buscar</button>
+        </div>
+
+        <table class="table-flip">
+            <thead>
+                <tr>
+                    <th><span>Ciudad <i class="fas fa-sort"></i></span></th>
+                    <th><span>País <i class="fas fa-sort"></i></span></th>
+                    <th><span>Fecha y Hora <i class="fas fa-sort"></i></span></th>
+                    <th><span>¿Día? <i class="fas fa-sort"></i></span></th>
+                    <th><span>Temperatura(C°) <i class="fas fa-sort"></i></span></th>
+                    <th><span>Precimitaciones (mm) <i class="fas fa-sort"></i></span></th>
+                </tr>
+            </thead>
+
+            <tbody id="table-body">
+                
+            </tbody>
+        </table>
+    </div>
+
+<script src="./javascript/script-API.js"></script>
+</body>
+</html>
