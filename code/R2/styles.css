@@ -68,6 +68,7 @@ body {
 .table-flip th i{
     font-size: 17px;
     margin-left: 15px;
+    transform: rotate(90deg);
 }
 
 .table-flip th i:hover{
@@ -141,5 +142,8 @@ body {
 
     .table-flip thead th {
         padding: 1.1rem 0.3rem 1.1rem 0.3rem;
+    }
+    .table-flip th i{
+        transform: none;
     }
 }
